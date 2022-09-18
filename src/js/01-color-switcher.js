@@ -10,8 +10,9 @@ function getRandomHexColor() {
 }
 
 stopButton.disabled = true;
-let timerId = null;
+
 function onStartBtnClick() {
+  let timerId = null;
   timerId = setInterval(() => {
     body.style.cssText = `background-color: ${getRandomHexColor()};`;
   }, 1000);
